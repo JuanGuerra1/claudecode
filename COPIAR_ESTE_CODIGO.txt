@@ -1,0 +1,88 @@
+════════════════════════════════════════════════════════════════
+  COPIA ESTE CÓDIGO PARA CREAR EL ARCHIVO .BAT EN WINDOWS
+════════════════════════════════════════════════════════════════
+
+INSTRUCCIONES:
+1. Abre el Bloc de notas (Notepad)
+2. Copia TODO el código de abajo
+3. Pégalo en el Bloc de notas
+4. Click en "Archivo" > "Guardar como..."
+5. Nombre: descargar_videos_windows.bat
+6. Tipo: "Todos los archivos (*.*)"
+7. Guárdalo en: C:\Users\Personal\Documents\
+
+════════════════════════════════════════════════════════════════
+
+CÓDIGO PARA COPIAR (empieza después de esta línea):
+
+@echo off
+chcp 65001 >nul
+echo ============================================
+echo   DESCARGADOR DE VIDEOS - UNIVERSIDAD ONLINE
+echo ============================================
+echo.
+
+REM Verificar si Python está instalado
+python --version >nul 2>&1
+if %errorlevel% neq 0 (
+    echo ERROR: Python no esta instalado
+    echo.
+    echo Por favor instala Python desde: https://www.python.org/downloads/
+    echo Asegurate de marcar "Add Python to PATH" durante la instalacion
+    pause
+    exit /b 1
+)
+
+echo OK: Python encontrado
+echo.
+
+REM Instalar yt-dlp
+echo Instalando yt-dlp...
+pip install yt-dlp
+echo.
+
+REM Crear carpeta para videos
+if not exist "videos_descargados" mkdir videos_descargados
+echo Carpeta 'videos_descargados' lista
+echo.
+
+REM Descargar videos
+echo Descargando videos de live.universidad.online...
+echo.
+yt-dlp "https://live.universidad.online/" -o "videos_descargados/%%(title)s.%%(ext)s"
+
+echo.
+echo ============================================
+echo Descarga completada!
+echo Los videos estan en: videos_descargados\
+echo ============================================
+echo.
+pause
+
+════════════════════════════════════════════════════════════════
+FIN DEL CÓDIGO
+════════════════════════════════════════════════════════════════
+
+DESPUÉS DE CREAR EL ARCHIVO:
+
+1. Haz doble click en: descargar_videos_windows.bat
+2. ¡Eso es todo! Los videos se descargarán automáticamente
+
+════════════════════════════════════════════════════════════════
+
+¿NO FUNCIONA? MÉTODO ALTERNATIVO (MÁS SIMPLE):
+
+1. Abre "Símbolo del sistema" (cmd)
+   - Presiona Windows + R
+   - Escribe: cmd
+   - Presiona Enter
+
+2. Ejecuta estos 2 comandos (uno por uno):
+
+   pip install yt-dlp
+
+   yt-dlp "https://live.universidad.online/"
+
+¡Listo! Los videos se descargarán en la carpeta actual.
+
+════════════════════════════════════════════════════════════════

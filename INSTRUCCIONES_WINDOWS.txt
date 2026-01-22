@@ -1,0 +1,153 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║     CÓMO DESCARGAR LOS VIDEOS EN WINDOWS - GUÍA PASO A PASO      ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+🖥️  ESTÁS USANDO WINDOWS - SIGUE ESTAS INSTRUCCIONES
+
+═══════════════════════════════════════════════════════════════════
+
+📥 PASO 1: DESCARGAR LOS ARCHIVOS
+
+   Tienes 3 opciones para obtener los archivos:
+
+   OPCIÓN A - Descargar desde GitHub (si tienes acceso):
+   --------------------------------------------------
+   1. Ve a: https://github.com/JuanGuerra1/claudecode
+   2. Click en el botón verde "Code"
+   3. Click en "Download ZIP"
+   4. Descomprime el archivo ZIP en tu carpeta Documentos
+
+   OPCIÓN B - Crear los archivos manualmente (MÁS FÁCIL):
+   -----------------------------------------------------
+   ¡Ve a la sección "CREAR ARCHIVOS MANUALMENTE" más abajo!
+
+   OPCIÓN C - Usar git (si sabes usar git):
+   ----------------------------------------
+   git clone https://github.com/JuanGuerra1/claudecode.git
+
+═══════════════════════════════════════════════════════════════════
+
+📁 PASO 2: UBICACIÓN RECOMENDADA EN WINDOWS
+
+   Guarda los archivos en una de estas ubicaciones:
+
+   ✓ C:\Users\Personal\Documents\descargador-videos\
+   ✓ C:\Users\Personal\Desktop\descargador-videos\
+   ✓ C:\descargador-videos\
+
+═══════════════════════════════════════════════════════════════════
+
+🚀 PASO 3: EJECUTAR EL DESCARGADOR
+
+   1. Abre "Símbolo del sistema" o "PowerShell":
+      - Presiona tecla Windows + R
+      - Escribe: cmd
+      - Presiona Enter
+
+   2. Ve a la carpeta donde guardaste los archivos:
+      cd C:\Users\Personal\Documents\descargador-videos
+
+   3. Ejecuta el script:
+      descargar_videos_windows.bat
+
+   ¡Eso es todo! Los videos se descargarán automáticamente.
+
+═══════════════════════════════════════════════════════════════════
+
+✋ REQUISITOS PREVIOS
+
+   ⚠️  IMPORTANTE: Necesitas tener Python instalado
+
+   ¿No tienes Python? Descárgalo aquí:
+   👉 https://www.python.org/downloads/
+
+   Durante la instalación de Python:
+   ✅ Marca la casilla "Add Python to PATH"
+   ✅ Click en "Install Now"
+
+   Para verificar si tienes Python:
+   python --version
+
+═══════════════════════════════════════════════════════════════════
+
+🛠️  CREAR ARCHIVOS MANUALMENTE (MÉTODO MÁS FÁCIL)
+
+   Si no puedes descargar desde GitHub, crea los archivos tú mismo:
+
+   1. Crea una carpeta nueva:
+      - Abre el Explorador de archivos
+      - Ve a: C:\Users\Personal\Documents\
+      - Click derecho > Nuevo > Carpeta
+      - Nómbrala: descargador-videos
+
+   2. Crea el archivo del script:
+      - Abre Bloc de notas (Notepad)
+      - Pega el contenido que te daré abajo
+      - Guarda como: descargar_videos_windows.bat
+      - En "Tipo": selecciona "Todos los archivos (*.*)"
+      - Guárdalo en: C:\Users\Personal\Documents\descargador-videos\
+
+═══════════════════════════════════════════════════════════════════
+
+📝 MÉTODO ALTERNATIVO - USAR PYTHON DIRECTAMENTE
+
+   Si prefieres usar Python en vez del archivo .bat:
+
+   1. Abre Símbolo del sistema (cmd)
+
+   2. Instala yt-dlp:
+      pip install yt-dlp
+
+   3. Descarga los videos:
+      yt-dlp "https://live.universidad.online/"
+
+   4. Los videos se guardarán en la carpeta actual
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 OPCIÓN SÚPER RÁPIDA (UN SOLO COMANDO)
+
+   Abre PowerShell como Administrador y ejecuta:
+
+   pip install yt-dlp; yt-dlp "https://live.universidad.online/"
+
+═══════════════════════════════════════════════════════════════════
+
+❓ SOLUCIÓN DE PROBLEMAS
+
+   ❌ Error: "python no se reconoce como comando"
+      Solución: Instala Python y marca "Add to PATH"
+
+   ❌ Error: "pip no se reconoce como comando"
+      Solución: Reinstala Python con la opción de PATH
+
+   ❌ Los videos no se descargan
+      Solución:
+      1. Verifica tu conexión a internet
+      2. Actualiza yt-dlp: pip install --upgrade yt-dlp
+      3. Intenta con un video específico primero
+
+   ❌ Permiso denegado
+      Solución: Ejecuta cmd o PowerShell como Administrador
+      (Click derecho > Ejecutar como administrador)
+
+═══════════════════════════════════════════════════════════════════
+
+📍 DÓNDE SE GUARDAN LOS VIDEOS
+
+   Los videos se guardan en una carpeta llamada "videos_descargados"
+   dentro de la carpeta donde ejecutaste el script.
+
+   Ejemplo:
+   C:\Users\Personal\Documents\descargador-videos\videos_descargados\
+
+═══════════════════════════════════════════════════════════════════
+
+💡 CONSEJOS
+
+   ✓ Usa una carpeta dedicada para el descargador
+   ✓ Los videos ocupan espacio - verifica que tengas suficiente
+   ✓ La descarga puede tardar dependiendo de tu internet
+   ✓ Puedes cerrar la ventana para cancelar la descarga (Ctrl+C)
+
+═══════════════════════════════════════════════════════════════════
