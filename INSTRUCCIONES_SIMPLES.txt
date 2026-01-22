@@ -1,0 +1,82 @@
+╔════════════════════════════════════════════════════════════════╗
+║  CÓMO DESCARGAR LOS VIDEOS - INSTRUCCIONES PARA PRINCIPIANTES ║
+╚════════════════════════════════════════════════════════════════╝
+
+📍 DÓNDE ESTÁS AHORA:
+   Estás en la carpeta: /home/user/claudecode
+
+📂 ARCHIVOS IMPORTANTES:
+   ✓ descargar_videos.py    - Script Python completo
+   ✓ descargar_facil.sh     - Script súper fácil de usar
+   ✓ README.md              - Documentación completa
+
+═══════════════════════════════════════════════════════════════
+
+🚀 OPCIÓN 1: LA MÁS FÁCIL (UN SOLO COMANDO)
+
+   1. Abre tu terminal
+
+   2. Copia y pega este comando:
+
+      ./descargar_facil.sh
+
+   3. ¡Listo! Los videos se descargarán automáticamente
+
+═══════════════════════════════════════════════════════════════
+
+🐍 OPCIÓN 2: USANDO PYTHON (MÁS CONTROL)
+
+   1. Instala yt-dlp primero:
+
+      pip install yt-dlp
+
+   2. Ejecuta el script Python:
+
+      python descargar_videos.py
+
+   3. Los videos se guardan en: videos_descargados/
+
+═══════════════════════════════════════════════════════════════
+
+🎯 OPCIÓN 3: SOLO DESCARGAR UN VIDEO ESPECÍFICO
+
+   python descargar_videos.py --url "URL_DEL_VIDEO"
+
+   Ejemplo:
+   python descargar_videos.py --url "https://videopress.com/embed/EOhUTbBF"
+
+═══════════════════════════════════════════════════════════════
+
+💡 TIPS IMPORTANTES:
+
+   ✓ Los videos se descargan en formato MP4
+   ✓ Se guarda la mejor calidad disponible
+   ✓ El audio ya viene incluido
+   ✓ Aparecen en la carpeta "videos_descargados"
+
+═══════════════════════════════════════════════════════════════
+
+❓ SI ALGO NO FUNCIONA:
+
+   1. Verifica que tienes Python instalado:
+      python --version
+
+   2. Instala yt-dlp:
+      pip install yt-dlp
+
+   3. Verifica que estás en la carpeta correcta:
+      pwd
+      (debe mostrar: /home/user/claudecode)
+
+═══════════════════════════════════════════════════════════════
+
+🔥 MÉTODO ULTRA RÁPIDO (SIN SCRIPTS):
+
+   Si solo quieres descargar rápido sin usar los scripts:
+
+   pip install yt-dlp
+   yt-dlp "https://live.universidad.online/"
+
+   ¡Eso es todo!
+
+═══════════════════════════════════════════════════════════════
