@@ -146,3 +146,8 @@ Este proyecto es de código abierto y está disponible para uso personal y comer
 ---
 
 **¡Feliz descarga! 🎬**
+
+## Nota personal
+
+Este es mi primer repo!
+
